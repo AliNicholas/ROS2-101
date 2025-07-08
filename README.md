@@ -56,24 +56,35 @@ ros2 run turtlesim turtlesim_node
 ```
 ros2 run turtlesim turtle_teleop_key
 ```
-3. In the teleop window, try the following and observe
-   a. Press one of the letters 'G' and see the status when complete
-   b. Press one of the letters and cancel early with 'F'
-   c. Press one of the letters 'G' and before it finishes press press another 'F'
-4. See the action clients in node info on the bottom
+3. In the teleop window, try the following and observe  
+   a. Press one of the letters 'G' and see the status when complete  
+   b. Press one of the letters and cancel early with 'F'  
+   c. Press one of the letters 'G' and before it finishes press press another 'F'  
+4. See the action clients in node info on the bottom  
 ```
 ros2 node info /teleop_turtle
 ```
 5. See all actions
-```
-ros2 action list
-ros2 action list -t // List with type
-```
+   ```
+   ros2 action list
+   ros2 action list -t // List with type
+   ```
 6. See action info
-```
-ros2 action info <action_name>
-ros2 action info /turtle1/rotate_absolute
-```
+   ```
+   ros2 action info <action_name>
+   ros2 action info /turtle1/rotate_absolute
+   ```
+7. See data type for action
+   ```
+   ros2 interface show turtlesim/action/RotateAbsolute
+   ```
+8. Send action goal
+   ```
+   ros2 action send_goal <action_name> <action_type> <goal>
+   ros2 action send_goal /turtle1/rotate_absolute turtlesim/action/RotateAbsolute "{theta: 1.57}"
+   ```
+
+## ROS Workspace
 
 
 
