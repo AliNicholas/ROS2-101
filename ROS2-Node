@@ -1,0 +1,21 @@
+Package allow to seperate code
+
+Each package in an independent unit
+
+nodes is inside the pkg
+
+Camera PKG
+- Camera Driver
+- Image processing
+
+Motion Planning pkg  
+
+
+What is a ROS 2 Node?
+Subprogram in your application, responsible for only one thing
+- Combined into a graph
+- Comm with each other thrugh topics, services, and params
+- Befentis:
+- Reduce Code complexity
+- Fault tolerance
+- Can be written in Python, C++ and communicate without problem2
