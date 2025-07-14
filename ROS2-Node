@@ -19,3 +19,10 @@ Subprogram in your application, responsible for only one thing
 - Reduce Code complexity
 - Fault tolerance
 - Can be written in Python, C++ and communicate without problem2
+
+ros2 node list --> to see node that running
+ros2 node info <node_name> -> to see specific node that running
+
+ros2 run <package_name> <node_name> --ros-args -r __nodde:=<renamed_name>
+
+
