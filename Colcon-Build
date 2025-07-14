@@ -1,0 +1,5 @@
+colcon build
+
+colcon build --packages-select my_cpp_pkg --symlink-install
+
+symlink install for py packages change without build again. make sure to chmod the file first
